@@ -10,6 +10,12 @@
 		287D0A6E1C4B73BD004566D6 /* ActivityRingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* ActivityRingsTests.swift */; };
 		28F828811C494B2C00330CF4 /* ActivityRings.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* ActivityRings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28F828881C494B2C00330CF4 /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* ActivityRings.framework */; };
+		E839A19D1F926D4700534B37 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19C1F926D4700534B37 /* Animatable.swift */; };
+		E839A19F1F926D6C00534B37 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19E1F926D6C00534B37 /* Animator.swift */; };
+		E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
+		E839A1A31F926DB600534B37 /* ProgressShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E839A1A21F926DB600534B37 /* ProgressShader.fsh */; };
+		E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A41F926DD400534B37 /* ActivityRingScene.swift */; };
+		E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		28F828821C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28F828871C494B2C00330CF4 /* ActivityRingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ActivityRingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E839A19C1F926D4700534B37 /* Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		E839A19E1F926D6C00534B37 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		E839A1A01F926D8100534B37 /* Double+Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Animatable.swift"; sourceTree = "<group>"; };
+		E839A1A21F926DB600534B37 /* ProgressShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ProgressShader.fsh; sourceTree = "<group>"; };
+		E839A1A41F926DD400534B37 /* ActivityRingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingScene.swift; sourceTree = "<group>"; };
+		E839A1A61F926E1900534B37 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				28F828971C494B4200330CF4 /* Sources */,
+				E839A1AA1F926F2A00534B37 /* Resources */,
 				28F8288B1C494B2C00330CF4 /* Tests */,
 				28F8287E1C494B2C00330CF4 /* Products */,
 			);
@@ -80,6 +93,9 @@
 		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E839A1A61F926E1900534B37 /* ActivityRingView.swift */,
+				E839A1A41F926DD400534B37 /* ActivityRingScene.swift */,
+				E839A1A81F926E4200534B37 /* Animator */,
 				E818F2351F92632400525BB6 /* Supporting Files */,
 			);
 			path = Sources;
@@ -100,6 +116,24 @@
 				28F8288E1C494B2C00330CF4 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E839A1A81F926E4200534B37 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				E839A19E1F926D6C00534B37 /* Animator.swift */,
+				E839A19C1F926D4700534B37 /* Animatable.swift */,
+				E839A1A01F926D8100534B37 /* Double+Animatable.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		E839A1AA1F926F2A00534B37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E839A1A21F926DB600534B37 /* ProgressShader.fsh */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839A1A31F926DB600534B37 /* ProgressShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E839A19F1F926D6C00534B37 /* Animator.swift in Sources */,
+				E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */,
+				E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */,
+				E839A19D1F926D4700534B37 /* Animatable.swift in Sources */,
+				E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +424,7 @@
 		28F828951C494B2C00330CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -397,6 +438,7 @@
 		28F828961C494B2C00330CF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
