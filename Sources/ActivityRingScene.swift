@@ -193,7 +193,7 @@ final class ActivityRingScene: SKScene {
             guard progress != 0 else { return nil }
             return UIBezierPath(arcCenter: center, radius: radius,
                                 startAngle: gradientAngle + gradientOffset + min(progress/2, 0.06),
-                                endAngle: gradientAngle + gradientOffset - 0.045,
+                                endAngle: gradientAngle + gradientOffset - 0.03,
                                 clockwise: false).cgPath
         }()
         
@@ -207,13 +207,15 @@ final class ActivityRingScene: SKScene {
         
         backgroundRingNode.lineWidth = ringWidth
         solidArcNode.lineWidth = ringWidth
-        shadowShapeNode.lineWidth = floor(ringWidth * 0.8)
+        shadowShapeNode.lineWidth = ringWidth
         gradientArcNode.lineWidth = ringWidth
         
-        let shadowRadius = NSNumber(value: ceil(0.2 * Double(ringWidth)))
+        let shadowRadius = NSNumber(value: ceil(0.3 * Double(ringWidth)))
+        let shadowAngle = NSNumber(value: Double(gradientAngle + gradientOffset + .pi/2))
         shadowNode.filter = CIFilter(
-            name: "CIGaussianBlur",
-            withInputParameters: ["inputRadius": shadowRadius])
+            name: "CIMotionBlur",
+            withInputParameters: ["inputRadius": shadowRadius,
+                                  "inputAngle" : shadowAngle])
     }
     
     private func updateColors(forProgress progress: Double) {
