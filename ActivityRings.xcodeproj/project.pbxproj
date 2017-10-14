@@ -13,7 +13,6 @@
 		E839A19D1F926D4700534B37 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19C1F926D4700534B37 /* Animatable.swift */; };
 		E839A19F1F926D6C00534B37 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19E1F926D6C00534B37 /* Animator.swift */; };
 		E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
-		E839A1A31F926DB600534B37 /* ProgressShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E839A1A21F926DB600534B37 /* ProgressShader.fsh */; };
 		E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A41F926DD400534B37 /* ActivityRingScene.swift */; };
 		E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +37,6 @@
 		E839A19C1F926D4700534B37 /* Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		E839A19E1F926D6C00534B37 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		E839A1A01F926D8100534B37 /* Double+Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Animatable.swift"; sourceTree = "<group>"; };
-		E839A1A21F926DB600534B37 /* ProgressShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = ProgressShader.fsh; sourceTree = "<group>"; };
 		E839A1A41F926DD400534B37 /* ActivityRingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingScene.swift; sourceTree = "<group>"; };
 		E839A1A61F926E1900534B37 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				28F828971C494B4200330CF4 /* Sources */,
-				E839A1AA1F926F2A00534B37 /* Resources */,
 				28F8288B1C494B2C00330CF4 /* Tests */,
 				28F8287E1C494B2C00330CF4 /* Products */,
 			);
@@ -126,14 +123,6 @@
 				E839A1A01F926D8100534B37 /* Double+Animatable.swift */,
 			);
 			path = Animator;
-			sourceTree = "<group>";
-		};
-		E839A1AA1F926F2A00534B37 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E839A1A21F926DB600534B37 /* ProgressShader.fsh */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E839A1A31F926DB600534B37 /* ProgressShader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
