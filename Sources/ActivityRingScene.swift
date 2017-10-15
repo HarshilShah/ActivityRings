@@ -138,6 +138,10 @@ final class ActivityRingScene: SKScene {
     // MARK:- Public methods
     
     func animateProgress(to targetValue: Double, withDuration duration: TimeInterval) {
+        guard targetValue >= 0, duration >= 0 else {
+            return
+        }
+        
         let now = CACurrentMediaTime()
         animator = Animator(from: getProgress(atTime: now),
                             to: targetValue,
