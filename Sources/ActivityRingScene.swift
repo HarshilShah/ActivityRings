@@ -88,7 +88,6 @@ final class ActivityRingScene: SKScene {
         
         addChild(shadowNode)
         shadowShapeNode.lineCap = .round
-        shadowShapeNode.strokeColor = .black
         shadowNode.addChild(shadowShapeNode)
         
         /// This shader simply sets the color at any point to be a mixture of the
@@ -225,6 +224,9 @@ final class ActivityRingScene: SKScene {
     private func updateColors(forProgress progress: Double) {
         backgroundRingNode.strokeColor = backgroundRingColor ?? startColor.withAlphaComponent(backgroundRingAlpha)
         solidArcNode.strokeColor = startColor
+        
+        let shadowAlpha = CGFloat(min(1, progress))
+        shadowShapeNode.strokeColor = UIColor.black.withAlphaComponent(shadowAlpha)
         
         var startRGB: (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
         var endRGB: (CGFloat, CGFloat, CGFloat)   = (0, 0, 0)
