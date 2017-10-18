@@ -15,6 +15,13 @@
 		E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
 		E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A41F926DD400534B37 /* ActivityRingScene.swift */; };
 		E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
+		E88339271F967D150043C96C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = E88339261F967D150043C96C /* CHANGELOG.md */; };
+		E8DAD1111F9689750013F0F2 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E8DAD1101F9689740013F0F2 /* demo.gif */; };
+		E8EC84C91F967B13002057A9 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C41F967B12002057A9 /* LICENSE.md */; };
+		E8EC84CA1F967B13002057A9 /* ActivityRings.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C51F967B12002057A9 /* ActivityRings.podspec */; };
+		E8EC84CB1F967B13002057A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C61F967B12002057A9 /* README.md */; };
+		E8EC84CC1F967B13002057A9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C71F967B12002057A9 /* .gitignore */; };
+		E8EC84CD1F967B13002057A9 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C81F967B13002057A9 /* .swift-version */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,13 @@
 		E839A1A01F926D8100534B37 /* Double+Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Animatable.swift"; sourceTree = "<group>"; };
 		E839A1A41F926DD400534B37 /* ActivityRingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingScene.swift; sourceTree = "<group>"; };
 		E839A1A61F926E1900534B37 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
+		E88339261F967D150043C96C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		E8DAD1101F9689740013F0F2 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = .assets/demo.gif; sourceTree = "<group>"; };
+		E8EC84C41F967B12002057A9 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
+		E8EC84C51F967B12002057A9 /* ActivityRings.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActivityRings.podspec; sourceTree = SOURCE_ROOT; };
+		E8EC84C61F967B12002057A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		E8EC84C71F967B12002057A9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		E8EC84C81F967B13002057A9 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 		28F828731C494B2C00330CF4 = {
 			isa = PBXGroup;
 			children = (
+				E8EC84CF1F967B24002057A9 /* Supporting Files */,
 				28F828971C494B4200330CF4 /* Sources */,
 				28F8288B1C494B2C00330CF4 /* Tests */,
 				28F8287E1C494B2C00330CF4 /* Products */,
@@ -123,6 +138,28 @@
 				E839A1A01F926D8100534B37 /* Double+Animatable.swift */,
 			);
 			path = Animator;
+			sourceTree = "<group>";
+		};
+		E8658ACF1F9747C60052FB63 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E8DAD1101F9689740013F0F2 /* demo.gif */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E8EC84CF1F967B24002057A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8658ACF1F9747C60052FB63 /* Assets */,
+				E8EC84C71F967B12002057A9 /* .gitignore */,
+				E8EC84C81F967B13002057A9 /* .swift-version */,
+				E8EC84C51F967B12002057A9 /* ActivityRings.podspec */,
+				E8EC84C41F967B12002057A9 /* LICENSE.md */,
+				E8EC84C61F967B12002057A9 /* README.md */,
+				E88339261F967D150043C96C /* CHANGELOG.md */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EC84CC1F967B13002057A9 /* .gitignore in Resources */,
+				E8DAD1111F9689750013F0F2 /* demo.gif in Resources */,
+				E88339271F967D150043C96C /* CHANGELOG.md in Resources */,
+				E8EC84CB1F967B13002057A9 /* README.md in Resources */,
+				E8EC84C91F967B13002057A9 /* LICENSE.md in Resources */,
+				E8EC84CA1F967B13002057A9 /* ActivityRings.podspec in Resources */,
+				E8EC84CD1F967B13002057A9 /* .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
