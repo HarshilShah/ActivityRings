@@ -12,6 +12,19 @@
 		28F828881C494B2C00330CF4 /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F8287D1C494B2C00330CF4 /* ActivityRings.framework */; };
 		E8180F851FA9ECB700109A3A /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8180F7C1FA9ECB700109A3A /* ActivityRings.framework */; };
 		E8180F951FA9F37700109A3A /* ActivityRings.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* ActivityRings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8180F971FA9F5EB00109A3A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180F961FA9F5EB00109A3A /* Typealias.swift */; };
+		E8180F981FA9F63C00109A3A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180F961FA9F5EB00109A3A /* Typealias.swift */; };
+		E8180F991FA9F6FB00109A3A /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
+		E8180F9A1FA9F70100109A3A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19E1F926D6C00534B37 /* Animator.swift */; };
+		E8180F9B1FA9F70600109A3A /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19C1F926D4700534B37 /* Animatable.swift */; };
+		E8180F9C1FA9F70D00109A3A /* ActivityRingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A41F926DD400534B37 /* ActivityRingScene.swift */; };
+		E8180FA01FA9F99500109A3A /* NSBezierPath+InitWithArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180F9E1FA9F94500109A3A /* NSBezierPath+InitWithArc.swift */; };
+		E8180FA31FA9FACB00109A3A /* NSBezierPath+CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180FA11FA9FAC100109A3A /* NSBezierPath+CGPath.swift */; };
+		E8180FA51FA9FC4400109A3A /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180FA41FA9FC4400109A3A /* UIColor+RGBA.swift */; };
+		E8180FA81FA9FC6500109A3A /* NSColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180FA61FA9FC4E00109A3A /* NSColor+RGBA.swift */; };
+		E8180FAC1FA9FE7D00109A3A /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
+		E8180FAD1FA9FEE700109A3A /* ActivityRingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0A6D1C4B73BD004566D6 /* ActivityRingsTests.swift */; };
+		E8180FAE1FA9FEEC00109A3A /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5D5151F977E8400CC3BFD /* AnimatorTests.swift */; };
 		E839A19D1F926D4700534B37 /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19C1F926D4700534B37 /* Animatable.swift */; };
 		E839A19F1F926D6C00534B37 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A19E1F926D6C00534B37 /* Animator.swift */; };
 		E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
@@ -53,6 +66,11 @@
 		28F8288E1C494B2C00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8180F7C1FA9ECB700109A3A /* ActivityRings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityRings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8180F841FA9ECB700109A3A /* ActivityRings macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityRings macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8180F961FA9F5EB00109A3A /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		E8180F9E1FA9F94500109A3A /* NSBezierPath+InitWithArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+InitWithArc.swift"; sourceTree = "<group>"; };
+		E8180FA11FA9FAC100109A3A /* NSBezierPath+CGPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+CGPath.swift"; sourceTree = "<group>"; };
+		E8180FA41FA9FC4400109A3A /* UIColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		E8180FA61FA9FC4E00109A3A /* NSColor+RGBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+RGBA.swift"; sourceTree = "<group>"; };
 		E839A19C1F926D4700534B37 /* Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
 		E839A19E1F926D6C00534B37 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		E839A1A01F926D8100534B37 /* Double+Animatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Animatable.swift"; sourceTree = "<group>"; };
@@ -136,12 +154,41 @@
 		28F828971C494B4200330CF4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E839A1A61F926E1900534B37 /* ActivityRingView.swift */,
-				E839A1A41F926DD400534B37 /* ActivityRingScene.swift */,
-				E839A1A81F926E4200534B37 /* Animator */,
+				E8180FA91FA9FE4100109A3A /* Shared */,
+				E8180FAB1FA9FE6100109A3A /* iOS */,
+				E8180FAA1FA9FE5C00109A3A /* macOS */,
 				E818F2351F92632400525BB6 /* Supporting Files */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		E8180FA91FA9FE4100109A3A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E8180F961FA9F5EB00109A3A /* Typealias.swift */,
+				E839A1A61F926E1900534B37 /* ActivityRingView.swift */,
+				E839A1A41F926DD400534B37 /* ActivityRingScene.swift */,
+				E839A1A81F926E4200534B37 /* Animator */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E8180FAA1FA9FE5C00109A3A /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8180FA61FA9FC4E00109A3A /* NSColor+RGBA.swift */,
+				E8180F9E1FA9F94500109A3A /* NSBezierPath+InitWithArc.swift */,
+				E8180FA11FA9FAC100109A3A /* NSBezierPath+CGPath.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E8180FAB1FA9FE6100109A3A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8180FA41FA9FC4400109A3A /* UIColor+RGBA.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 		E818F2351F92632400525BB6 /* Supporting Files */ = {
@@ -385,8 +432,10 @@
 			files = (
 				E839A19F1F926D6C00534B37 /* Animator.swift in Sources */,
 				E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */,
+				E8180FA51FA9FC4400109A3A /* UIColor+RGBA.swift in Sources */,
 				E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */,
 				E839A19D1F926D4700534B37 /* Animatable.swift in Sources */,
+				E8180F971FA9F5EB00109A3A /* Typealias.swift in Sources */,
 				E839A1A11F926D8100534B37 /* Double+Animatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +453,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8180F9C1FA9F70D00109A3A /* ActivityRingScene.swift in Sources */,
+				E8180F9A1FA9F70100109A3A /* Animator.swift in Sources */,
+				E8180F9B1FA9F70600109A3A /* Animatable.swift in Sources */,
+				E8180FA31FA9FACB00109A3A /* NSBezierPath+CGPath.swift in Sources */,
+				E8180F991FA9F6FB00109A3A /* Double+Animatable.swift in Sources */,
+				E8180F981FA9F63C00109A3A /* Typealias.swift in Sources */,
+				E8180FA01FA9F99500109A3A /* NSBezierPath+InitWithArc.swift in Sources */,
+				E8180FA81FA9FC6500109A3A /* NSColor+RGBA.swift in Sources */,
+				E8180FAC1FA9FE7D00109A3A /* ActivityRingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +469,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8180FAE1FA9FEEC00109A3A /* AnimatorTests.swift in Sources */,
+				E8180FAD1FA9FEE700109A3A /* ActivityRingsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +724,7 @@
 		E8180F8F1FA9ECB700109A3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -680,7 +741,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshilshah.ActivityRingsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -688,6 +748,7 @@
 		E8180F901FA9ECB700109A3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
