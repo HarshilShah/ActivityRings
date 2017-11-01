@@ -169,15 +169,22 @@ final class ActivityRingScene: SKScene {
         let maxAngle = 2 * .pi - 3 * minAngle - angleOffset
         
         // Multiplying angles by -1 because SpriteKit
-        // NOTE:- Clockwise means anticlockwise in SpriteKit
+        // NOTE:- Clockwise means anticlockwise in SpriteKit for iOS
         
         let gradientOffset = max(angle - maxAngle, 0) * -1
         let gradientAngle = min(angle, maxAngle) * -1
         
-        backgroundRingNode.path = BezierPath(arcCenter: center, radius: radius,
-                                             startAngle: 0,
-                                             endAngle: 2 * .pi,
-                                             clockwise: false).cgPath
+        backgroundRingNode.path = {
+            if #available(macOS 10.10, *) {
+                return BezierPath(arcCenter: center, radius: radius,
+                                  startAngle: 0, endAngle: 2 * .pi,
+                                  clockwise: true).cgPath
+            } else {
+                return BezierPath(arcCenter: center, radius: radius,
+                                  startAngle: 0, endAngle: 2 * .pi,
+                                  clockwise: false).cgPath
+            }
+        }()
         
         solidArcNode.path = {
             guard angle > maxAngle else {

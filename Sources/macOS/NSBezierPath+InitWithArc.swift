@@ -10,9 +10,17 @@ import AppKit
 
 extension NSBezierPath {
     
-    convenience init(arcCenter center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool) {
+    convenience init(arcCenter center: CGPoint,
+                     radius: CGFloat,
+                     startAngle: CGFloat,
+                     endAngle: CGFloat,
+                     clockwise: Bool) {
         self.init()
-        self.appendArc(withCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
+        self.appendArc(withCenter: center,
+                       radius: radius,
+                       startAngle: startAngle * 180 / .pi,
+                       endAngle: endAngle * 180 / .pi,
+                       clockwise: !clockwise)
     }
     
 }
