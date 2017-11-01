@@ -5,6 +5,6 @@
       location = "group:../../ActivityRings.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:ActivityRingsExample-iOS.xcodeproj">
+      location = "group:/Users/harshil/Developer/Apple/ActivityRings/Examples/iOS Example/ActivityRings iOS Example.xcodeproj">
    </FileRef>
 </Workspace>

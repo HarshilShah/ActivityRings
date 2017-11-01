@@ -43,13 +43,13 @@
 
 /* Begin PBXFileReference section */
 		287D0A711C4B7877004566D6 /* ActivityRingsExampleUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityRingsExampleUITests.swift; sourceTree = "<group>"; };
-		28F828CC1C4B714D00330CF4 /* ActivityRingsExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ActivityRingsExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828CC1C4B714D00330CF4 /* ActivityRings iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ActivityRings iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F828CF1C4B714D00330CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28F828D11C4B714D00330CF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28F828D61C4B714D00330CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F828D91C4B714D00330CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28F828DB1C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28F828E01C4B714D00330CF4 /* ActivityRingsExample-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityRingsExample-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28F828E01C4B714D00330CF4 /* ActivityRings iOS ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityRings iOS ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F828E61C4B714D00330CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E818F2411F9265F700525BB6 /* ActivityRings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActivityRings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E842521E1F93C53B009B36BA /* Activity Rings.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Activity Rings.sketch"; sourceTree = "<group>"; };
@@ -88,8 +88,8 @@
 		28F828CD1C4B714D00330CF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28F828CC1C4B714D00330CF4 /* ActivityRingsExample-iOS.app */,
-				28F828E01C4B714D00330CF4 /* ActivityRingsExample-iOSUITests.xctest */,
+				28F828CC1C4B714D00330CF4 /* ActivityRings iOS Example.app */,
+				28F828E01C4B714D00330CF4 /* ActivityRings iOS ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28F828CB1C4B714D00330CF4 /* ActivityRingsExample-iOS */ = {
+		28F828CB1C4B714D00330CF4 /* ActivityRings iOS Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRingsExample-iOS" */;
+			buildConfigurationList = 28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRings iOS Example" */;
 			buildPhases = (
 				28F828C81C4B714D00330CF4 /* Sources */,
 				28F828C91C4B714D00330CF4 /* Frameworks */,
@@ -163,14 +163,14 @@
 			);
 			dependencies = (
 			);
-			name = "ActivityRingsExample-iOS";
+			name = "ActivityRings iOS Example";
 			productName = ActivityRingsExample;
-			productReference = 28F828CC1C4B714D00330CF4 /* ActivityRingsExample-iOS.app */;
+			productReference = 28F828CC1C4B714D00330CF4 /* ActivityRings iOS Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28F828DF1C4B714D00330CF4 /* ActivityRingsExample-iOSUITests */ = {
+		28F828DF1C4B714D00330CF4 /* ActivityRings iOS ExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRingsExample-iOSUITests" */;
+			buildConfigurationList = 28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRings iOS ExampleUITests" */;
 			buildPhases = (
 				28F828DC1C4B714D00330CF4 /* Sources */,
 				28F828DD1C4B714D00330CF4 /* Frameworks */,
@@ -181,9 +181,9 @@
 			dependencies = (
 				28F828E21C4B714D00330CF4 /* PBXTargetDependency */,
 			);
-			name = "ActivityRingsExample-iOSUITests";
+			name = "ActivityRings iOS ExampleUITests";
 			productName = ActivityRingsExampleUITests;
-			productReference = 28F828E01C4B714D00330CF4 /* ActivityRingsExample-iOSUITests.xctest */;
+			productReference = 28F828E01C4B714D00330CF4 /* ActivityRings iOS ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "ActivityRingsExample-iOS" */;
+			buildConfigurationList = 28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "ActivityRings iOS Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +221,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28F828CB1C4B714D00330CF4 /* ActivityRingsExample-iOS */,
-				28F828DF1C4B714D00330CF4 /* ActivityRingsExample-iOSUITests */,
+				28F828CB1C4B714D00330CF4 /* ActivityRings iOS Example */,
+				28F828DF1C4B714D00330CF4 /* ActivityRings iOS ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,7 +270,7 @@
 /* Begin PBXTargetDependency section */
 		28F828E21C4B714D00330CF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28F828CB1C4B714D00330CF4 /* ActivityRingsExample-iOS */;
+			target = 28F828CB1C4B714D00330CF4 /* ActivityRings iOS Example */;
 			targetProxy = 28F828E11C4B714D00330CF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -449,7 +449,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "ActivityRingsExample-iOS" */ = {
+		28F828C71C4B714D00330CF4 /* Build configuration list for PBXProject "ActivityRings iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828E71C4B714D00330CF4 /* Debug */,
@@ -458,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRingsExample-iOS" */ = {
+		28F828E91C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRings iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828EA1C4B714D00330CF4 /* Debug */,
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRingsExample-iOSUITests" */ = {
+		28F828EC1C4B714D00330CF4 /* Build configuration list for PBXNativeTarget "ActivityRings iOS ExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28F828ED1C4B714D00330CF4 /* Debug */,
