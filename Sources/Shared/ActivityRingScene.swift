@@ -168,12 +168,17 @@ final class ActivityRingScene: SKScene {
         let minAngle = 1.1 * atan(0.5 * ringWidth / radius)
         let maxAngle = 2 * .pi - 3 * minAngle - angleOffset
         
-        // Multiplying angles by -1 because SpriteKit
-        // NOTE:- Clockwise means anticlockwise in SpriteKit for iOS
+        /// Multiplying angles by -1 because SpriteKit
+        ///
+        /// NOTE:- Clockwise means anticlockwise in SpriteKit for iOS
+        /// Clockwise means clockwise in macOS, however, so the clockwise
+        /// variable is flipped in that method
         
         let gradientOffset = max(angle - maxAngle, 0) * -1
         let gradientAngle = min(angle, maxAngle) * -1
         
+        /// Best as I can tell there's no way to generate a perfect circular arc
+        /// with just the center and radius that works in both UIKit and AppKit
         backgroundRingNode.path = {
             if #available(macOS 10.10, *) {
                 return BezierPath(arcCenter: center, radius: radius,
