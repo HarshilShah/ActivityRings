@@ -13,6 +13,7 @@
 		E813BA441FAB42A400501DB1 /* ActivityRingsExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813BA431FAB42A400501DB1 /* ActivityRingsExampleUITests.swift */; };
 		E86A02DE1FAB44E50043C23E /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86A02DD1FAB44E50043C23E /* ActivityRings.framework */; };
 		E86A02DF1FAB44E50043C23E /* ActivityRings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E86A02DD1FAB44E50043C23E /* ActivityRings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E87CC4211FAB4DF800DB65E7 /* Activity Rings.sketch in Resources */ = {isa = PBXBuildFile; fileRef = E87CC4201FAB4DF800DB65E7 /* Activity Rings.sketch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E813BA431FAB42A400501DB1 /* ActivityRingsExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsExampleUITests.swift; sourceTree = "<group>"; };
 		E813BA451FAB42A400501DB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86A02DD1FAB44E50043C23E /* ActivityRings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActivityRings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87CC4201FAB4DF800DB65E7 /* Activity Rings.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Activity Rings.sketch"; path = "Supporting Files/Activity Rings.sketch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				E86A02DD1FAB44E50043C23E /* ActivityRings.framework */,
+				E87CC4221FAB4DFF00DB65E7 /* Supporting Files */,
 				E813BA251FAB42A400501DB1 /* Sources */,
 				E813BA421FAB42A400501DB1 /* Tests */,
 				E813BA241FAB42A400501DB1 /* Products */,
@@ -121,6 +124,14 @@
 			isa = PBXGroup;
 			children = (
 				E813BA451FAB42A400501DB1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E87CC4221FAB4DFF00DB65E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E87CC4201FAB4DF800DB65E7 /* Activity Rings.sketch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E813BA2E1FAB42A400501DB1 /* Assets.xcassets in Resources */,
+				E87CC4211FAB4DF800DB65E7 /* Activity Rings.sketch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
