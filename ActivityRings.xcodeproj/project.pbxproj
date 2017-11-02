@@ -100,7 +100,7 @@
 		E89466BC1FAB3EA10088C529 /* ActivityRings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityRings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89466C41FAB3EA10088C529 /* ActivityRings tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityRings tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8C5D5151F977E8400CC3BFD /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
-		E8DAD1101F9689740013F0F2 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = .assets/demo.gif; sourceTree = "<group>"; };
+		E8DAD1101F9689740013F0F2 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		E8EC84C41F967B12002057A9 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		E8EC84C51F967B12002057A9 /* ActivityRings.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActivityRings.podspec; sourceTree = SOURCE_ROOT; };
 		E8EC84C61F967B12002057A9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -259,18 +259,18 @@
 			path = Animator;
 			sourceTree = "<group>";
 		};
-		E8658ACF1F9747C60052FB63 /* Assets */ = {
+		E8658ACF1F9747C60052FB63 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				E8DAD1101F9689740013F0F2 /* demo.gif */,
 			);
-			name = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E8EC84CF1F967B24002057A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8658ACF1F9747C60052FB63 /* Assets */,
+				E8658ACF1F9747C60052FB63 /* Resources */,
 				E8EC84C71F967B12002057A9 /* .gitignore */,
 				E8EC84C81F967B13002057A9 /* .swift-version */,
 				E8EC84C51F967B12002057A9 /* ActivityRings.podspec */,
