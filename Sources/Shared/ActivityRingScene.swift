@@ -60,7 +60,7 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Initialization/setup
     
-    @available(iOS 10.0, macOS 10.12, *)
+    @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
     override func sceneDidLoad() {
         super.sceneDidLoad()
         setup()
@@ -69,9 +69,9 @@ final class ActivityRingScene: SKScene {
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
-        if #available(iOS 10.0, macOS 10.12, *) {
+        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
             /// Nothing to do; this is a fallback for `sceneDidLoad` since that
-            /// doesn't exist on iOS <10 and macOS <10.12
+            /// doesn't exist on iOS <10.0 and macOS <10.12 and tvOS <10.0
         } else {
             setup()
         }
@@ -244,7 +244,7 @@ final class ActivityRingScene: SKScene {
             return
         }
         
-        if #available(iOS 10.0, macOS 10.12, *) {
+        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
             gradientArcNode.strokeShader?.uniforms = [
                 SKUniform(name: "progress",    float: min(Float(progress), 1)),
                 SKUniform(name: "start_color", vectorFloat3: vector3(Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2))),
