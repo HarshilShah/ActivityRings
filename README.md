@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/github/release/HarshilShah/ActivityRings.svg)](https://github.com/HarshilShah/ActivityRings/releases/latest)
 ![Package Managers](https://img.shields.io/badge/supports-CocoaPods%20%7C%20Carthage-green.svg)
+![Platforms](https://img.shields.io/cocoapods/p/ActivityRings.svg?style=flat)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/HarshilShah/ActivityRings/blob/master/LICENSE)
 [![Contact](https://img.shields.io/badge/contact-%40HarshilShah1910-3a8fc1.svg)](https://twitter.com/HarshilShah1910)
 
@@ -9,12 +10,12 @@ ActivityRings is an attempt to recreate the ring controls in Apple’s Activity 
 
 This project is a SpriteKit port of [Max Konovalov](https://github.com/maxkonovalov)’s pure UIKit implementation, [MKRingProgressView](https://github.com/maxkonovalov/MKRingProgressView).
 
-![Demo](https://raw.githubusercontent.com/HarshilShah/ActivityRings/master/.assets/demo.gif)
+![Demo](https://raw.githubusercontent.com/HarshilShah/ActivityRings/master/Resources/demo.gif)
 
 ## Requirements
 
 - Swift 4
-- iOS 8
+- iOS 8.0+ / macOS 10.10+ / tvOS 9.0+
 
 ## Installation
 
