@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E89466BB1FAB3EA10088C529"
-               BuildableName = "ActivityRings_tvOS.framework"
+               BuildableName = "ActivityRings.framework"
                BlueprintName = "ActivityRings tvOS"
                ReferencedContainer = "container:ActivityRings.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E89466BB1FAB3EA10088C529"
-            BuildableName = "ActivityRings_tvOS.framework"
+            BuildableName = "ActivityRings.framework"
             BlueprintName = "ActivityRings tvOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E89466BB1FAB3EA10088C529"
-            BuildableName = "ActivityRings_tvOS.framework"
+            BuildableName = "ActivityRings.framework"
             BlueprintName = "ActivityRings tvOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E89466BB1FAB3EA10088C529"
-            BuildableName = "ActivityRings_tvOS.framework"
+            BuildableName = "ActivityRings.framework"
             BlueprintName = "ActivityRings tvOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
