@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ActivityRings.xcodeproj">
+      location = "group:../../ActivityRings.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example/ActivityRingsExample.xcodeproj">
+      location = "group:ActivityRings iOS Example.xcodeproj">
    </FileRef>
 </Workspace>

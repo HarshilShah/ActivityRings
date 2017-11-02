@@ -24,15 +24,15 @@ final class ActivityRingScene: SKScene {
         didSet { isUpdateNeeded = true }
     }
     
-    var startColor = UIColor.purple {
+    var startColor = Color.purple {
         didSet { isUpdateNeeded = true }
     }
     
-    var endColor = UIColor.blue {
+    var endColor = Color.blue {
         didSet { isUpdateNeeded = true }
     }
     
-    var backgroundRingColor: UIColor? {
+    var backgroundRingColor: Color? {
         didSet { isUpdateNeeded = true }
     }
     
@@ -60,7 +60,7 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Initialization/setup
     
-    @available(iOS 10.0, *)
+    @available(iOS 10.0, macOS 10.12, *)
     override func sceneDidLoad() {
         super.sceneDidLoad()
         setup()
@@ -69,9 +69,9 @@ final class ActivityRingScene: SKScene {
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
-        if #available(iOS 10.0, *) {
+        if #available(iOS 10.0, macOS 10.12, *) {
             /// Nothing to do; this is a fallback for `sceneDidLoad` since that
-            /// doesn't exist on iOS <10
+            /// doesn't exist on iOS <10 and macOS <10.12
         } else {
             setup()
         }
@@ -168,44 +168,56 @@ final class ActivityRingScene: SKScene {
         let minAngle = 1.1 * atan(0.5 * ringWidth / radius)
         let maxAngle = 2 * .pi - 3 * minAngle - angleOffset
         
-        // Multiplying angles by -1 because SpriteKit
-        // NOTE:- Clockwise means anticlockwise in SpriteKit
+        /// Multiplying angles by -1 because SpriteKit
+        ///
+        /// NOTE:- Clockwise means anticlockwise in SpriteKit for iOS
+        /// Clockwise means clockwise in macOS, however, so the clockwise
+        /// variable is flipped in that method
         
         let gradientOffset = max(angle - maxAngle, 0) * -1
         let gradientAngle = min(angle, maxAngle) * -1
         
-        backgroundRingNode.path = UIBezierPath(arcCenter: center, radius: radius,
-                                               startAngle: 0,
-                                               endAngle: 2 * .pi,
-                                               clockwise: false).cgPath
+        /// Best as I can tell there's no way to generate a perfect circular arc
+        /// with just the center and radius that works in both UIKit and AppKit
+        backgroundRingNode.path = {
+            if #available(macOS 10.10, *) {
+                return BezierPath(arcCenter: center, radius: radius,
+                                  startAngle: 0, endAngle: 2 * .pi,
+                                  clockwise: true).cgPath
+            } else {
+                return BezierPath(arcCenter: center, radius: radius,
+                                  startAngle: 0, endAngle: 2 * .pi,
+                                  clockwise: false).cgPath
+            }
+        }()
         
         solidArcNode.path = {
             guard angle > maxAngle else {
-                return UIBezierPath(arcCenter: center, radius: radius,
-                                    startAngle: angleOffset,
-                                    endAngle: angleOffset,
-                                    clockwise: false).cgPath
+                return BezierPath(arcCenter: center, radius: radius,
+                                  startAngle: angleOffset,
+                                  endAngle: angleOffset,
+                                  clockwise: false).cgPath
             }
-            return UIBezierPath(arcCenter: center, radius: radius,
-                                startAngle: angleOffset,
-                                endAngle: gradientOffset,
-                                clockwise: false).cgPath
+            return BezierPath(arcCenter: center, radius: radius,
+                              startAngle: angleOffset,
+                              endAngle: gradientOffset,
+                              clockwise: false).cgPath
         }()
         
         shadowShapeNode.path = {
             guard progress != 0 else { return nil }
-            return UIBezierPath(arcCenter: center, radius: radius,
-                                startAngle: gradientAngle + gradientOffset + min(progress/2, 0.06),
-                                endAngle: gradientAngle + gradientOffset - 0.03,
-                                clockwise: false).cgPath
+            return BezierPath(arcCenter: center, radius: radius,
+                              startAngle: gradientAngle + gradientOffset + min(progress/2, 0.06),
+                              endAngle: gradientAngle + gradientOffset - 0.03,
+                              clockwise: false).cgPath
         }()
         
         gradientArcNode.path = {
             guard progress != 0 else { return nil }
-            return UIBezierPath(arcCenter: center, radius: radius,
-                                startAngle: angleOffset + gradientOffset,
-                                endAngle: gradientAngle + gradientOffset,
-                                clockwise: false).cgPath
+            return BezierPath(arcCenter: center, radius: radius,
+                              startAngle: angleOffset + gradientOffset,
+                              endAngle: gradientAngle + gradientOffset,
+                              clockwise: false).cgPath
         }()
         
         backgroundRingNode.lineWidth = ringWidth
@@ -226,28 +238,24 @@ final class ActivityRingScene: SKScene {
         solidArcNode.strokeColor = startColor
         
         let shadowAlpha = CGFloat(min(1, progress))
-        shadowShapeNode.strokeColor = UIColor.black.withAlphaComponent(shadowAlpha)
+        shadowShapeNode.strokeColor = Color.black.withAlphaComponent(shadowAlpha)
         
-        var startRGB: (CGFloat, CGFloat, CGFloat) = (0, 0, 0)
-        var endRGB: (CGFloat, CGFloat, CGFloat)   = (0, 0, 0)
+        guard let startRGBA = startColor.rgba, let endRGBA = endColor.rgba else {
+            return
+        }
         
-        let isStartConversionSuccess = startColor.getRed(&startRGB.0, green: &startRGB.1, blue: &startRGB.2, alpha: nil)
-        let isEndConversionSuccess   = endColor.getRed(&endRGB.0, green: &endRGB.1, blue: &endRGB.2, alpha: nil)
-        
-        if isStartConversionSuccess && isEndConversionSuccess {
-            if #available(iOS 10.0, *) {
-                gradientArcNode.strokeShader?.uniforms = [
-                    SKUniform(name: "progress",    float: min(Float(progress), 1)),
-                    SKUniform(name: "start_color", vectorFloat3: vector3(Float(startRGB.0), Float(startRGB.1), Float(startRGB.2))),
-                    SKUniform(name: "end_color",   vectorFloat3: vector3(Float(endRGB.0),   Float(endRGB.1),   Float(endRGB.2)))
-                ]
-            } else {
-                gradientArcNode.strokeShader?.uniforms = [
-                    SKUniform(name: "progress",    float: min(Float(progress), 1)),
-                    SKUniform(name: "start_color", float: GLKVector3(v: (Float(startRGB.0), Float(startRGB.1), Float(startRGB.2)))),
-                    SKUniform(name: "end_color",   float: GLKVector3(v: (Float(endRGB.0),   Float(endRGB.1),   Float(endRGB.2))))
-                ]
-            }
+        if #available(iOS 10.0, macOS 10.12, *) {
+            gradientArcNode.strokeShader?.uniforms = [
+                SKUniform(name: "progress",    float: min(Float(progress), 1)),
+                SKUniform(name: "start_color", vectorFloat3: vector3(Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2))),
+                SKUniform(name: "end_color",   vectorFloat3: vector3(Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2)))
+            ]
+        } else {
+            gradientArcNode.strokeShader?.uniforms = [
+                SKUniform(name: "progress",    float: min(Float(progress), 1)),
+                SKUniform(name: "start_color", float: GLKVector3(v: (Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2)))),
+                SKUniform(name: "end_color",   float: GLKVector3(v: (Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2))))
+            ]
         }
         
     }

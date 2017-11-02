@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
+               BlueprintIdentifier = "E8180F7B1FA9ECB700109A3A"
                BuildableName = "ActivityRings.framework"
-               BlueprintName = "ActivityRings"
+               BlueprintName = "ActivityRings macOS"
                ReferencedContainer = "container:ActivityRings.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "28F828861C494B2C00330CF4"
-               BuildableName = "ActivityRingsTests.xctest"
-               BlueprintName = "ActivityRingsTests"
+               BlueprintIdentifier = "E8180F831FA9ECB700109A3A"
+               BuildableName = "ActivityRings macOS Tests.xctest"
+               BlueprintName = "ActivityRings macOS Tests"
                ReferencedContainer = "container:ActivityRings.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
+            BlueprintIdentifier = "E8180F7B1FA9ECB700109A3A"
             BuildableName = "ActivityRings.framework"
-            BlueprintName = "ActivityRings"
+            BlueprintName = "ActivityRings macOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,9 +66,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
+            BlueprintIdentifier = "E8180F7B1FA9ECB700109A3A"
             BuildableName = "ActivityRings.framework"
-            BlueprintName = "ActivityRings"
+            BlueprintName = "ActivityRings macOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,9 +84,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "28F8287C1C494B2C00330CF4"
+            BlueprintIdentifier = "E8180F7B1FA9ECB700109A3A"
             BuildableName = "ActivityRings.framework"
-            BlueprintName = "ActivityRings"
+            BlueprintName = "ActivityRings macOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

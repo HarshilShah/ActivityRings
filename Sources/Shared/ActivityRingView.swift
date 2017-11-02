@@ -35,8 +35,8 @@ public final class ActivityRingView: SKView {
     /// The color at the start of the ring. The alpha value is ignored while
     /// rendering
     ///
-    /// The default value is `UIColor.purple`
-    public var startColor: UIColor {
+    /// The default value is `.purple`
+    public var startColor: Color {
         get { return activityRingScene.startColor }
         set { activityRingScene.startColor = newValue }
     }
@@ -44,8 +44,8 @@ public final class ActivityRingView: SKView {
     /// The color at the end of the ring. The alpha value is ignored while
     /// rendering
     ///
-    /// The default value is `UIColor.blue`
-    public var endColor: UIColor {
+    /// The default value is `.blue`
+    public var endColor: Color {
         get { return activityRingScene.endColor }
         set { activityRingScene.endColor = newValue }
     }
@@ -56,7 +56,7 @@ public final class ActivityRingView: SKView {
     /// background ring's color is the `startColor` with an opacity of `0.25`
     ///
     /// The default value is `nil`
-    public var backgroundRingColor: UIColor? {
+    public var backgroundRingColor: Color? {
         get { return activityRingScene.backgroundRingColor }
         set { activityRingScene.backgroundRingColor = newValue }
     }

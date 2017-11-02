@@ -6,7 +6,7 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <SpriteKit/SpriteKit.h>
 
 //! Project version number for ActivityRings.
 FOUNDATION_EXPORT double ActivityRingsVersionNumber;
