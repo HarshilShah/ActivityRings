@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ActivityRingsExample
+//  ActivityRings iOS Example
 //
 //  Created by Harshil Shah on 14/10/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.

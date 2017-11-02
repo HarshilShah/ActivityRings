@@ -1,5 +1,5 @@
 //
-//  ActivityRings_macOS_ExampleUITests.swift
+//  ActivityRingsExampleUITests.swift
 //  ActivityRings macOS ExampleUITests
 //
 //  Created by Harshil Shah on 01/11/17.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class ActivityRings_macOS_ExampleUITests: XCTestCase {
+class ActivityRingsExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -92,19 +92,19 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E82D7A991FAA3E1000392EE7 /* Supporing Files */ = {
+		E82D7A991FAA3E1000392EE7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				E82D7A971FAA3E0800392EE7 /* Activity Rings.sketch */,
 			);
-			path = "Supporing Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E8F5AD641FAA0AED002910E6 = {
 			isa = PBXGroup;
 			children = (
 				E8F5AD9C1FAA0B83002910E6 /* ActivityRings.framework */,
-				E82D7A991FAA3E1000392EE7 /* Supporing Files */,
+				E82D7A991FAA3E1000392EE7 /* Supporting Files */,
 				E8F5AD6F1FAA0AED002910E6 /* Sources */,
 				E8F5AD8D1FAA0AED002910E6 /* Tests */,
 				E8F5AD6E1FAA0AED002910E6 /* Products */,

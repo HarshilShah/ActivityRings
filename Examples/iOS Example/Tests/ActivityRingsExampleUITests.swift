@@ -1,6 +1,6 @@
 //
 //  ActivityRingsExampleUITests.swift
-//  ActivityRingsExampleUITests
+//  ActivityRings iOS ExampleUITests
 //
 //  Created by Harshil Shah on 14/10/17.
 //  Copyright © 2017 Harshil Shah. All rights reserved.

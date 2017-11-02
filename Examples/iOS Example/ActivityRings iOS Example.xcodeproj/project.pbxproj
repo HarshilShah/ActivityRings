@@ -77,7 +77,7 @@
 		28F828C31C4B714D00330CF4 = {
 			isa = PBXGroup;
 			children = (
-				E84252201F93C549009B36BA /* Supporing Files */,
+				E84252201F93C549009B36BA /* Supporting Files */,
 				28F828CE1C4B714D00330CF4 /* Sources */,
 				28F828E31C4B714D00330CF4 /* Tests */,
 				28F828CD1C4B714D00330CF4 /* Products */,
@@ -139,12 +139,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E84252201F93C549009B36BA /* Supporing Files */ = {
+		E84252201F93C549009B36BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				E842521E1F93C53B009B36BA /* Activity Rings.sketch */,
 			);
-			path = "Supporing Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
