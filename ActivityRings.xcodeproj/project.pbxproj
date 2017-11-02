@@ -31,6 +31,8 @@
 		E839A1A51F926DD400534B37 /* ActivityRingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A41F926DD400534B37 /* ActivityRingScene.swift */; };
 		E839A1A71F926E1900534B37 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
 		E88339271F967D150043C96C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = E88339261F967D150043C96C /* CHANGELOG.md */; };
+		E89466B41FAB3E4A0088C529 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = E89466B31FAB3E4A0088C529 /* Info-tvOS.plist */; };
+		E89466B61FAB3E590088C529 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = E89466B51FAB3E590088C529 /* Info-tvOS.plist */; };
 		E8C5D5171F977E9500CC3BFD /* AnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5D5151F977E8400CC3BFD /* AnimatorTests.swift */; };
 		E8DAD1111F9689750013F0F2 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = E8DAD1101F9689740013F0F2 /* demo.gif */; };
 		E8EC84C91F967B13002057A9 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = E8EC84C41F967B12002057A9 /* LICENSE.md */; };
@@ -77,6 +79,8 @@
 		E839A1A41F926DD400534B37 /* ActivityRingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingScene.swift; sourceTree = "<group>"; };
 		E839A1A61F926E1900534B37 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
 		E88339261F967D150043C96C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		E89466B31FAB3E4A0088C529 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		E89466B51FAB3E590088C529 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		E8C5D5151F977E8400CC3BFD /* AnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorTests.swift; sourceTree = "<group>"; };
 		E8DAD1101F9689740013F0F2 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = demo.gif; path = .assets/demo.gif; sourceTree = "<group>"; };
 		E8EC84C41F967B12002057A9 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
@@ -196,6 +200,7 @@
 			children = (
 				28F828801C494B2C00330CF4 /* ActivityRings.h */,
 				28F828821C494B2C00330CF4 /* Info.plist */,
+				E89466B31FAB3E4A0088C529 /* Info-tvOS.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				28F8288E1C494B2C00330CF4 /* Info.plist */,
+				E89466B51FAB3E590088C529 /* Info-tvOS.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,12 +398,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89466B61FAB3E590088C529 /* Info-tvOS.plist in Resources */,
 				E8EC84CC1F967B13002057A9 /* .gitignore in Resources */,
 				E8DAD1111F9689750013F0F2 /* demo.gif in Resources */,
 				E88339271F967D150043C96C /* CHANGELOG.md in Resources */,
 				E8EC84CB1F967B13002057A9 /* README.md in Resources */,
 				E8EC84C91F967B13002057A9 /* LICENSE.md in Resources */,
 				E8EC84CA1F967B13002057A9 /* ActivityRings.podspec in Resources */,
+				E89466B41FAB3E4A0088C529 /* Info-tvOS.plist in Resources */,
 				E8EC84CD1F967B13002057A9 /* .swift-version in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
