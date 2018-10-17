@@ -39,7 +39,7 @@ github "HarshilShah/ActivityRings"
 
 ### Basics
 
-To get started, import `ActivityRings`, and use the `ActivityRingView` class within it to display the control.
+To get started, import `ActivityRings`. To display the control, use the `ActivityRingView` class on iOS, macOS, and tvOS, and the `ActivityRingScene` class on watchOS.
 
 ### Customisation
 
