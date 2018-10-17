@@ -142,7 +142,7 @@ final class ActivityRingScene: SKScene {
         }
         
         let now = CACurrentMediaTime()
-        animator = Animator(from: getProgress(atTime: now),
+        animator = Animator(from: getProgress(),
                             to: targetValue,
                             startTime: now,
                             duration: duration)
