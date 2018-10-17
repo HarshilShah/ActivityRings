@@ -9,7 +9,7 @@
 import Foundation
 
 // watchOS doesn't have CoreAnimation,
-// so we need to create out own implementation of `CACurrentMediaTime`.
+// so we need to create our own implementation of `CACurrentMediaTime`.
 
 #if !canImport(CoreAnimation)
 fileprivate var cached_mach_timebase_info = mach_timebase_info_data_t()
