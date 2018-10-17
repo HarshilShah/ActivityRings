@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-final class ActivityRingScene: SKScene {
+public final class ActivityRingScene: SKScene {
     
     // MARK:- Constants
     
@@ -16,23 +16,23 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Public variables
     
-    var progress: Double = 0 {
+    public var progress: Double = 0 {
         didSet { isUpdateNeeded = true }
     }
     
-    var ringWidth: CGFloat = 60 {
+    public var ringWidth: CGFloat = 60 {
         didSet { isUpdateNeeded = true }
     }
     
-    var startColor = Color.purple {
+    public var startColor = Color.purple {
         didSet { isUpdateNeeded = true }
     }
     
-    var endColor = Color.blue {
+    public var endColor = Color.blue {
         didSet { isUpdateNeeded = true }
     }
     
-    var backgroundRingColor: Color? {
+    public var backgroundRingColor: Color? {
         didSet { isUpdateNeeded = true }
     }
     
@@ -61,13 +61,13 @@ final class ActivityRingScene: SKScene {
     // MARK:- Initialization/setup
     
     @available(iOS 10.0, macOS 10.12, tvOS 10.0, watchOS 3.0, *)
-    override func sceneDidLoad() {
+    public override func sceneDidLoad() {
         super.sceneDidLoad()
         setup()
     }
     
     #if SKVIEW_AVAILABLE // excludes watchOS
-    override func didMove(to view: SKView) {
+    public override func didMove(to view: SKView) {
         super.didMove(to: view)
         
         if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
@@ -117,7 +117,7 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- SKScene methods
     
-    override func update(_ currentTime: TimeInterval) {
+    public override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)
         
         guard isAnimating || isUpdateNeeded else {
@@ -131,14 +131,14 @@ final class ActivityRingScene: SKScene {
         updateLayout(forProgress: progress)
     }
     
-    override func didChangeSize(_ oldSize: CGSize) {
+    public override func didChangeSize(_ oldSize: CGSize) {
         super.didChangeSize(oldSize)
         isUpdateNeeded = true
     }
     
     // MARK:- Public methods
     
-    func animateProgress(to targetValue: Double, withDuration duration: TimeInterval) {
+    public func animateProgress(to targetValue: Double, withDuration duration: TimeInterval) {
         guard targetValue >= 0, duration >= 0 else {
             return
         }
@@ -270,4 +270,3 @@ final class ActivityRingScene: SKScene {
     }
     
 }
-

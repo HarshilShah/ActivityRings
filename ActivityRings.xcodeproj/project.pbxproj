@@ -17,6 +17,7 @@
 		2E5901602177604C00D80DE8 /* Double+Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A01F926D8100534B37 /* Double+Animatable.swift */; };
 		2E5901642177628A00D80DE8 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180FA41FA9FC4400109A3A /* UIColor+RGBA.swift */; };
 		2E5901672177640E00D80DE8 /* CACurrentMediaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5901662177640E00D80DE8 /* CACurrentMediaTime.swift */; };
+		2E59019121776B4C00D80DE8 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839A1A61F926E1900534B37 /* ActivityRingView.swift */; };
 		E8180F851FA9ECB700109A3A /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8180F7C1FA9ECB700109A3A /* ActivityRings.framework */; };
 		E8180F951FA9F37700109A3A /* ActivityRings.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F828801C494B2C00330CF4 /* ActivityRings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8180F971FA9F5EB00109A3A /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8180F961FA9F5EB00109A3A /* Typealias.swift */; };
@@ -620,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E59015E2177604C00D80DE8 /* Animator.swift in Sources */,
+				2E59019121776B4C00D80DE8 /* ActivityRingView.swift in Sources */,
 				2E59015B2177604C00D80DE8 /* Typealias.swift in Sources */,
 				2E5901602177604C00D80DE8 /* Double+Animatable.swift in Sources */,
 				2E59015D2177604C00D80DE8 /* ActivityRingScene.swift in Sources */,
