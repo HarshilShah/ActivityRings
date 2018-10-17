@@ -1,6 +1,13 @@
 ## Changelog
 
+## 2.0.0 Release notes (17/10/2018)
+----
+
+- Updated for Swift 4.2
+- Adds support for watchOS
+
 ## 1.1.0 Release notes (2/11/2017)
+----
 
 - Adds support for macOS and tvOS
 
