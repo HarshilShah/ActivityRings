@@ -60,12 +60,13 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Initialization/setup
     
-    @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
+    @available(iOS 10.0, macOS 10.12, tvOS 10.0, watchOS 3.0, *)
     override func sceneDidLoad() {
         super.sceneDidLoad()
         setup()
     }
     
+    #if SKVIEW_AVAILABLE // excludes watchOS
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
@@ -76,6 +77,7 @@ final class ActivityRingScene: SKScene {
             setup()
         }
     }
+    #endif
     
     private func setup() {
         backgroundColor = .clear
@@ -225,12 +227,15 @@ final class ActivityRingScene: SKScene {
         shadowShapeNode.lineWidth = ringWidth
         gradientArcNode.lineWidth = ringWidth
         
+        #if canImport(CoreImage)
         let shadowRadius = NSNumber(value: ceil(0.3 * Double(ringWidth)))
         let shadowAngle = NSNumber(value: Double(gradientAngle + gradientOffset + .pi/2))
+        
         shadowNode.filter = CIFilter(
             name: "CIMotionBlur",
             parameters: ["inputRadius": shadowRadius,
                          "inputAngle" : shadowAngle])
+        #endif
     }
     
     private func updateColors(forProgress progress: Double) {
@@ -244,18 +249,22 @@ final class ActivityRingScene: SKScene {
             return
         }
         
-        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
+        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, watchOS 4.0, *) {
             gradientArcNode.strokeShader?.uniforms = [
                 SKUniform(name: "progress",    float: min(Float(progress), 1)),
                 SKUniform(name: "start_color", vectorFloat3: vector3(Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2))),
                 SKUniform(name: "end_color",   vectorFloat3: vector3(Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2)))
             ]
         } else {
+            #if canImport(GLKit)
             gradientArcNode.strokeShader?.uniforms = [
                 SKUniform(name: "progress",    float: min(Float(progress), 1)),
                 SKUniform(name: "start_color", float: GLKVector3(v: (Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2)))),
                 SKUniform(name: "end_color",   float: GLKVector3(v: (Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2))))
             ]
+            #else
+            fatalError("No available `strokeShader` API.")
+            #endif
         }
         
     }
