@@ -229,8 +229,8 @@ final class ActivityRingScene: SKScene {
         let shadowAngle = NSNumber(value: Double(gradientAngle + gradientOffset + .pi/2))
         shadowNode.filter = CIFilter(
             name: "CIMotionBlur",
-            withInputParameters: ["inputRadius": shadowRadius,
-                                  "inputAngle" : shadowAngle])
+            parameters: ["inputRadius": shadowRadius,
+                         "inputAngle" : shadowAngle])
     }
     
     private func updateColors(forProgress progress: Double) {

@@ -14,7 +14,7 @@ This project is a SpriteKit port of [Max Konovalov](https://github.com/maxkonova
 
 ## Requirements
 
-- Swift 4
+- Swift 4.2
 - iOS 8.0+ / macOS 10.10+ / tvOS 9.0+
 
 ## Installation
