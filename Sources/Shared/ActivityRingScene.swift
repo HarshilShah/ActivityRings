@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-final class ActivityRingScene: SKScene {
+public final class ActivityRingScene: SKScene {
     
     // MARK:- Constants
     
@@ -16,23 +16,23 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Public variables
     
-    var progress: Double = 0 {
+    public var progress: Double = 0 {
         didSet { isUpdateNeeded = true }
     }
     
-    var ringWidth: CGFloat = 60 {
+    public var ringWidth: CGFloat = 60 {
         didSet { isUpdateNeeded = true }
     }
     
-    var startColor = Color.purple {
+    public var startColor = Color.purple {
         didSet { isUpdateNeeded = true }
     }
     
-    var endColor = Color.blue {
+    public var endColor = Color.blue {
         didSet { isUpdateNeeded = true }
     }
     
-    var backgroundRingColor: Color? {
+    public var backgroundRingColor: Color? {
         didSet { isUpdateNeeded = true }
     }
     
@@ -60,13 +60,14 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- Initialization/setup
     
-    @available(iOS 10.0, macOS 10.12, tvOS 10.0, *)
-    override func sceneDidLoad() {
+    @available(iOS 10.0, macOS 10.12, tvOS 10.0, watchOS 3.0, *)
+    public override func sceneDidLoad() {
         super.sceneDidLoad()
         setup()
     }
     
-    override func didMove(to view: SKView) {
+    #if SKVIEW_AVAILABLE // excludes watchOS
+    public override func didMove(to view: SKView) {
         super.didMove(to: view)
         
         if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
@@ -76,6 +77,7 @@ final class ActivityRingScene: SKScene {
             setup()
         }
     }
+    #endif
     
     private func setup() {
         backgroundColor = .clear
@@ -115,7 +117,7 @@ final class ActivityRingScene: SKScene {
     
     // MARK:- SKScene methods
     
-    override func update(_ currentTime: TimeInterval) {
+    public override func update(_ currentTime: TimeInterval) {
         super.update(currentTime)
         
         guard isAnimating || isUpdateNeeded else {
@@ -129,14 +131,14 @@ final class ActivityRingScene: SKScene {
         updateLayout(forProgress: progress)
     }
     
-    override func didChangeSize(_ oldSize: CGSize) {
+    public override func didChangeSize(_ oldSize: CGSize) {
         super.didChangeSize(oldSize)
         isUpdateNeeded = true
     }
     
     // MARK:- Public methods
     
-    func animateProgress(to targetValue: Double, withDuration duration: TimeInterval) {
+    public func animateProgress(to targetValue: Double, withDuration duration: TimeInterval) {
         guard targetValue >= 0, duration >= 0 else {
             return
         }
@@ -225,12 +227,15 @@ final class ActivityRingScene: SKScene {
         shadowShapeNode.lineWidth = ringWidth
         gradientArcNode.lineWidth = ringWidth
         
+        #if canImport(CoreImage)
         let shadowRadius = NSNumber(value: ceil(0.3 * Double(ringWidth)))
         let shadowAngle = NSNumber(value: Double(gradientAngle + gradientOffset + .pi/2))
+        
         shadowNode.filter = CIFilter(
             name: "CIMotionBlur",
             parameters: ["inputRadius": shadowRadius,
                          "inputAngle" : shadowAngle])
+        #endif
     }
     
     private func updateColors(forProgress progress: Double) {
@@ -244,21 +249,24 @@ final class ActivityRingScene: SKScene {
             return
         }
         
-        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, *) {
+        if #available(iOS 10.0, macOS 10.12, tvOS 10.0, watchOS 4.0, *) {
             gradientArcNode.strokeShader?.uniforms = [
                 SKUniform(name: "progress",    float: min(Float(progress), 1)),
                 SKUniform(name: "start_color", vectorFloat3: vector3(Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2))),
                 SKUniform(name: "end_color",   vectorFloat3: vector3(Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2)))
             ]
         } else {
+            #if canImport(GLKit)
             gradientArcNode.strokeShader?.uniforms = [
                 SKUniform(name: "progress",    float: min(Float(progress), 1)),
                 SKUniform(name: "start_color", float: GLKVector3(v: (Float(startRGBA.0), Float(startRGBA.1), Float(startRGBA.2)))),
                 SKUniform(name: "end_color",   float: GLKVector3(v: (Float(endRGBA.0),   Float(endRGBA.1),   Float(endRGBA.2))))
             ]
+            #else
+            fatalError("No available `strokeShader` API.")
+            #endif
         }
         
     }
     
 }
-
