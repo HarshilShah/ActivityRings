@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ActivityRings_watchOS_Example_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <spriteKitScene width="50" height="50" alignment="left" id="6l5-zp-2LH"/>
+                        <spriteKitScene width="100" height="100" alignment="left" id="Y78-yu-Y4e"/>
+                        <spriteKitScene width="133" height="133" alignment="left" id="7VC-pm-HWe"/>
+                    </items>
+                    <connections>
+                        <outlet property="largeInterfaceScene" destination="7VC-pm-HWe" id="u6Q-g8-LOY"/>
+                        <outlet property="mediumInterfaceScene" destination="Y78-yu-Y4e" id="rro-ZZ-Jwi"/>
+                        <outlet property="smallInterfaceScene" destination="6l5-zp-2LH" id="rMY-og-ANo"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
