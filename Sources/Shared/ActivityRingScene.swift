@@ -56,6 +56,8 @@ public final class ActivityRingScene: SKScene {
     private lazy var shadowNode = SKEffectNode()
     private lazy var shadowShapeNode = SKShapeNode()
     private lazy var solidArcNode = SKShapeNode()
+    private lazy var gradientCropNode = SKCropNode()
+    private lazy var unshadedArcNode = SKShapeNode()
     private lazy var gradientArcNode = SKShapeNode()
     
     // MARK:- Initialization/setup
@@ -110,7 +112,12 @@ public final class ActivityRingScene: SKScene {
         
         gradientArcNode.strokeShader = ringShader
         gradientArcNode.lineCap = .round
-        addChild(gradientArcNode)
+        
+        unshadedArcNode.lineCap = .round
+        gradientCropNode.maskNode = unshadedArcNode
+        gradientCropNode.maskNode = unshadedArcNode
+        gradientCropNode.addChild(gradientArcNode)
+        addChild(gradientCropNode)
         
         updateColors(forProgress: getProgress())
     }
@@ -222,10 +229,13 @@ public final class ActivityRingScene: SKScene {
                               clockwise: false).cgPath
         }()
         
+        unshadedArcNode.path = gradientArcNode.path
+        
         backgroundRingNode.lineWidth = ringWidth
         solidArcNode.lineWidth = ringWidth
         shadowShapeNode.lineWidth = ringWidth
         gradientArcNode.lineWidth = ringWidth
+        unshadedArcNode.lineWidth = ringWidth
         
         #if canImport(CoreImage)
         let shadowRadius = NSNumber(value: ceil(0.3 * Double(ringWidth)))
