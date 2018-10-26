@@ -25,4 +25,8 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target    = '9.0'
   spec.watchos.deployment_target = '4.0'
 
+  spec.ios.pod_target_xcconfig = { 'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SKVIEW_AVAILABLE $(inherited)' }
+  spec.osx.pod_target_xcconfig = { 'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SKVIEW_AVAILABLE $(inherited)' }
+  spec.tvos.pod_target_xcconfig = { 'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'SKVIEW_AVAILABLE $(inherited)' }
+
 end

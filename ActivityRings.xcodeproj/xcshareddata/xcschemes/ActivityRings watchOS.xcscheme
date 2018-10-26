@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2E5901522177603800D80DE8"
-               BuildableName = "ActivityRings_watchOS.framework"
+               BuildableName = "ActivityRings.framework"
                BlueprintName = "ActivityRings watchOS"
                ReferencedContainer = "container:ActivityRings.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E5901522177603800D80DE8"
-            BuildableName = "ActivityRings_watchOS.framework"
+            BuildableName = "ActivityRings.framework"
             BlueprintName = "ActivityRings watchOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2E5901522177603800D80DE8"
-            BuildableName = "ActivityRings_watchOS.framework"
+            BuildableName = "ActivityRings.framework"
             BlueprintName = "ActivityRings watchOS"
             ReferencedContainer = "container:ActivityRings.xcodeproj">
          </BuildableReference>
