@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name             = 'ActivityRings'
-  spec.version          = '2.0.0'
+  spec.version          = '2.0.1'
   spec.summary          = 'An attempt to recreate the ring controls in Apple’s Activity app'
   spec.description      = <<-DESC
                           ActivityRings is an attempt to recreate the ring controls used in Apple’s iOS and watchOS Activity app

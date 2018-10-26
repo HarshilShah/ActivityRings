@@ -1,5 +1,11 @@
 ## Changelog
 
+## 2.0.1 Release notes (26/10/2018)
+----
+
+- Fixed some antialiasing issues
+- Fixed a bug where ActivityRingView wasn’t visible on available platforms 
+
 ## 2.0.0 Release notes (17/10/2018)
 ----
 
