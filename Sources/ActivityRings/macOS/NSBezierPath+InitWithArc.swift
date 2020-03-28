@@ -6,6 +6,8 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
+#if os(macOS)
+
 import AppKit
 
 extension NSBezierPath {
@@ -42,3 +44,5 @@ extension NSBezierPath {
     }
     
 }
+
+#endif

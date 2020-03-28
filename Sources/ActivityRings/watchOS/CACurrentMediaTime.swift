@@ -6,12 +6,13 @@
 //  Copyright © 2018 Harshil Shah. All rights reserved.
 //
 
-import Foundation
+#if os(watchOS)
 
 // watchOS doesn't have CoreAnimation,
 // so we need to create our own implementation of `CACurrentMediaTime`.
 
-#if !canImport(CoreAnimation)
+import Foundation
+
 fileprivate var cached_mach_timebase_info = mach_timebase_info_data_t()
 
 func CACurrentMediaTime() -> CFTimeInterval {
@@ -26,4 +27,5 @@ func CACurrentMediaTime() -> CFTimeInterval {
     let nanos = Double(mach_absolute_time() * UInt64(cached_mach_timebase_info.numer)) / Double(cached_mach_timebase_info.denom)
     return nanos / 1.0e9;
 }
+
 #endif

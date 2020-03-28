@@ -6,6 +6,8 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
+#if os(macOS)
+
 import AppKit
 
 extension NSBezierPath {
@@ -36,9 +38,13 @@ extension NSBezierPath {
             case .closePath:
                 path.closeSubpath()
                 
+            @unknown default:
+                fatalError("Unknown element \(String(describing: type)) in CGPath")
             }
         }
         return path
     }
     
 }
+
+#endif

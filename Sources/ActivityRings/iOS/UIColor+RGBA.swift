@@ -6,6 +6,8 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
+#if !os(macOS)
+
 import UIKit
 
 extension UIColor {
@@ -25,3 +27,5 @@ extension UIColor {
     }
     
 }
+
+#endif

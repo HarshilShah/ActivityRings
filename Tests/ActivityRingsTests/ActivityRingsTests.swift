@@ -6,6 +6,8 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
+#if !os(watchOS)
+
 import XCTest
 @testable import ActivityRings
 
@@ -34,3 +36,5 @@ class ActivityRingsTests: XCTestCase {
     }
     
 }
+
+#endif

@@ -14,11 +14,7 @@ Pod::Spec.new do |spec|
   spec.source           = { git: 'https://github.com/HarshilShah/ActivityRings.git', tag: spec.version.to_s }
   spec.frameworks       = 'SpriteKit'
 
-  spec.source_files         = 'Sources/Shared/**/*.swift', 'Sources/Supporting\ Files/ActivityRings.h'
-  spec.ios.source_files     = 'Sources/iOS/**/*.swift'
-  spec.osx.source_files     = 'Sources/macOS/**/*.swift'
-  spec.tvos.source_files    = 'Sources/iOS/**/*.swift'
-  spec.watchos.source_files = 'Sources/iOS/**/*.swift', 'Sources/watchOS/**/*.swift'
+  spec.source_files     = 'Sources/**/*.swift'
 
   spec.ios.deployment_target     = '8.0'
   spec.osx.deployment_target     = '10.10'

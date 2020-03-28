@@ -6,9 +6,9 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
+#if SKVIEW_AVAILABLE // excludes watchOS
 import SpriteKit
 
-#if SKVIEW_AVAILABLE // excludes watchOS
 public final class ActivityRingView: SKView {
     
     // MARK:- Public variables
@@ -107,5 +107,5 @@ public final class ActivityRingView: SKView {
     }
     
 }
-#endif
 
+#endif
