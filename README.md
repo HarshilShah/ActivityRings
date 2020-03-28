@@ -19,7 +19,24 @@ This project is a SpriteKit port of [Max Konovalov](https://github.com/maxkonova
 
 ## Installation
 
-ActivityRings is available via CocoaPods and Carthage.
+### Swift Package Manager
+
+#### Add dependencies
+
+Add the `ActivityRings` package to the dependencies within your application’s `Package.swift` file. Substitute `"x.x.x"` with the latest `ActivityRings` [release](https://github.com/HarshilShah/ActivityRings/releases).
+```swift
+.package(url: "https://github.com/HarshilShah/ActivityRings.git", from: "x.x.x")
+```
+Add `ActivityRings` to your target's dependencies:
+```swift
+.target(name: "example", dependencies: ["ActivityRings"]),
+```
+#### Import package
+```swift
+import ActivityRings
+```
+
+ActivityRings is also available via CocoaPods and Carthage.
 
 ### CocoaPods
 
