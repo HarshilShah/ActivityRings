@@ -3,18 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E82D7A981FAA3E0800392EE7 /* Activity Rings.sketch in Resources */ = {isa = PBXBuildFile; fileRef = E82D7A971FAA3E0800392EE7 /* Activity Rings.sketch */; };
+		0714CAB7242F6ED100645C65 /* Activity Rings.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 0714CAB6242F6ED100645C65 /* Activity Rings.sketch */; };
+		0785EC19242F76AE00048E24 /* ActivityRings in Frameworks */ = {isa = PBXBuildFile; productRef = 0785EC18242F76AE00048E24 /* ActivityRings */; };
 		E8F5AD711FAA0AED002910E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD701FAA0AED002910E6 /* AppDelegate.swift */; };
 		E8F5AD731FAA0AED002910E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD721FAA0AED002910E6 /* ViewController.swift */; };
 		E8F5AD751FAA0AED002910E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F5AD741FAA0AED002910E6 /* Assets.xcassets */; };
 		E8F5AD781FAA0AED002910E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F5AD761FAA0AED002910E6 /* Main.storyboard */; };
 		E8F5AD8F1FAA0AED002910E6 /* ActivityRings_macOS_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD8E1FAA0AED002910E6 /* ActivityRings_macOS_ExampleUITests.swift */; };
-		E8F5AD9D1FAA0B83002910E6 /* ActivityRings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5AD9C1FAA0B83002910E6 /* ActivityRings.framework */; };
-		E8F5AD9E1FAA0B83002910E6 /* ActivityRings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8F5AD9C1FAA0B83002910E6 /* ActivityRings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E8F5AD9E1FAA0B83002910E6 /* ActivityRings.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E82D7A971FAA3E0800392EE7 /* Activity Rings.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Activity Rings.sketch"; path = "Supporing Files/Activity Rings.sketch"; sourceTree = SOURCE_ROOT; };
+		0714CAB6242F6ED100645C65 /* Activity Rings.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Activity Rings.sketch"; sourceTree = "<group>"; };
+		0785EC17242F76A400048E24 /* ActivityRings */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ActivityRings; path = ../..; sourceTree = "<group>"; };
 		E8F5AD6D1FAA0AED002910E6 /* ActivityRings macOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ActivityRings macOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5AD701FAA0AED002910E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8F5AD721FAA0AED002910E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +52,6 @@
 		E8F5AD8A1FAA0AED002910E6 /* ActivityRings macOS ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ActivityRings macOS ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F5AD8E1FAA0AED002910E6 /* ActivityRings_macOS_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRings_macOS_ExampleUITests.swift; sourceTree = "<group>"; };
 		E8F5AD901FAA0AED002910E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8F5AD9C1FAA0B83002910E6 /* ActivityRings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActivityRings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8F5AD9D1FAA0B83002910E6 /* ActivityRings.framework in Frameworks */,
+				0785EC19242F76AE00048E24 /* ActivityRings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0714CAB5242F6ED100645C65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0714CAB6242F6ED100645C65 /* Activity Rings.sketch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0714CAC1242F6FD600645C65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0785EC17242F76A400048E24 /* ActivityRings */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E82D7A951FAA3BFE00392EE7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,22 +106,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E82D7A991FAA3E1000392EE7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E82D7A971FAA3E0800392EE7 /* Activity Rings.sketch */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		E8F5AD641FAA0AED002910E6 = {
 			isa = PBXGroup;
 			children = (
-				E8F5AD9C1FAA0B83002910E6 /* ActivityRings.framework */,
-				E82D7A991FAA3E1000392EE7 /* Supporting Files */,
+				0714CAB5242F6ED100645C65 /* Supporting Files */,
 				E8F5AD6F1FAA0AED002910E6 /* Sources */,
 				E8F5AD8D1FAA0AED002910E6 /* Tests */,
 				E8F5AD6E1FAA0AED002910E6 /* Products */,
+				0714CAC1242F6FD600645C65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +164,9 @@
 			dependencies = (
 			);
 			name = "ActivityRings macOS Example";
+			packageProductDependencies = (
+				0785EC18242F76AE00048E24 /* ActivityRings */,
+			);
 			productName = "ActivityRings macOS Example";
 			productReference = E8F5AD6D1FAA0AED002910E6 /* ActivityRings macOS Example.app */;
 			productType = "com.apple.product-type.application";
@@ -187,15 +196,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Harshil Shah";
 				TargetAttributes = {
 					E8F5AD6C1FAA0AED002910E6 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					E8F5AD891FAA0AED002910E6 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E8F5AD6C1FAA0AED002910E6;
 					};
@@ -210,6 +221,8 @@
 				Base,
 			);
 			mainGroup = E8F5AD641FAA0AED002910E6;
+			packageReferences = (
+			);
 			productRefGroup = E8F5AD6E1FAA0AED002910E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -227,7 +240,7 @@
 			files = (
 				E8F5AD751FAA0AED002910E6 /* Assets.xcassets in Resources */,
 				E8F5AD781FAA0AED002910E6 /* Main.storyboard in Resources */,
-				E82D7A981FAA3E0800392EE7 /* Activity Rings.sketch in Resources */,
+				0714CAB7242F6ED100645C65 /* Activity Rings.sketch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +307,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -301,6 +315,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,6 +366,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -358,6 +374,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -382,7 +399,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -391,14 +409,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sources/Supporting Files/ActivityRings_macOS_Example.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harshilshah.ActivityRings-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -407,14 +429,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Sources/Supporting Files/ActivityRings_macOS_Example.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harshilshah.ActivityRings-macOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -422,14 +448,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harshilshah.ActivityRings-macOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "ActivityRings macOS Example";
 			};
 			name = Debug;
@@ -438,14 +469,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = BM5Y87HJ2F;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.harshilshah.ActivityRings-macOS-ExampleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "ActivityRings macOS Example";
 			};
 			name = Release;
@@ -481,6 +517,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0785EC18242F76AE00048E24 /* ActivityRings */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ActivityRings;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8F5AD651FAA0AED002910E6 /* Project object */;
 }
