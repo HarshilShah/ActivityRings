@@ -6,7 +6,8 @@
 //  Copyright © 2017 Harshil Shah. All rights reserved.
 //
 
-#if SKVIEW_AVAILABLE // excludes watchOS
+#if !os(watchOS)
+
 import SpriteKit
 
 public final class ActivityRingView: SKView {
