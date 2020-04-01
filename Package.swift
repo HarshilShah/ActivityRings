@@ -13,6 +13,7 @@ let package = Package(
     products: [
         .library(
             name: "ActivityRings",
+            type: .dynamic,
             targets: ["ActivityRings"]),
     ],
     dependencies: [
